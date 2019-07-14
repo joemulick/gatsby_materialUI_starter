@@ -6,7 +6,8 @@ import MuiLink from '@material-ui/core/Link';
 import ProTip from '../components/ProTip';
 import Link from '../components/Link';
 
-import indexStyles from "../styles/index.module.scss"
+import Navbar from '../components/Navbar'
+
 
 function MadeWithLove() {
   return (
@@ -22,9 +23,11 @@ function MadeWithLove() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
+    <div>
+    <Navbar />
+    <Container maxWidth="xl">
       <Box my={4}>
-        <Typography className={indexStyles.test} variant="h4" component="h1" gutterBottom>
+        <Typography variant="h4" component="h1" gutterBottom>
           Gatsby v4-beta example
         </Typography>
         <Link to="/about" color="secondary">
@@ -34,5 +37,6 @@ export default function App() {
         <MadeWithLove />
       </Box>
     </Container>
+    </div>
   );
 }
