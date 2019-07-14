@@ -6,8 +6,20 @@ import MuiLink from '@material-ui/core/Link';
 import ProTip from '../components/ProTip';
 import Link from '../components/Link';
 
-import Navbar from '../components/Navbar'
+import MainLandingSectionAlpha from '../components/MainLandingSectionAlpha'
+// import Navbar from '../components/Navbar'
 
+// mainGrid: {
+//   minHeight: '70vmin',
+//   width: 'auto',
+//   background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1551161156/rawpixel-653764-unsplash-edited_ezhadt.jpg) no-repeat fixed',
+//   position: 'relative',
+//   webkitBackgroundSize: 'cover',
+//   mozBackgroundSize: 'cover',
+//   oBackgroundSize: 'cover',
+//   backgroundSize: 'cover',
+  
+// }
 
 function MadeWithLove() {
   return (
@@ -24,7 +36,8 @@ function MadeWithLove() {
 export default function App() {
   return (
     <div>
-    <Navbar />
+    <MainLandingSectionAlpha />
+    {/* <Navbar /> */}
     <Container maxWidth="xl">
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>
